@@ -11,27 +11,19 @@ public class Main {
     static void main() {
         Map<String, List<Double>> alunos = new HashMap<>();
 
-        List<Double> notasAndrei = new ArrayList<>();
-        notasAndrei.add(10.0);
-        notasAndrei.add(8.5);
-        notasAndrei.add(9.2);
-        notasAndrei.add(6.5);
-        alunos.put("Andrei",notasAndrei);
+        alunos.put("Andrei", new ArrayList<>(List.of(10.0, 9.5, 8.0, 6.5)));
+        alunos.put("Adriel", new ArrayList<>(List.of(10.0, 10.0, 10.0, 10.0)));
+        alunos.put("Aline", new ArrayList<>(List.of(7.0, 6.5, 8.0, 9.5)));
 
-        List<Double> notasAdriel = new ArrayList<>();
-        notasAdriel.add(10.0);
-        notasAdriel.add(10.0);
-        notasAdriel.add(10.0);
-        notasAdriel.add(10.0);
-        alunos.put("Adriel",notasAdriel);
+        for (Map.Entry<String, List<Double>> entry : alunos.entrySet()){
+            String nome = entry.getKey();
+            List<Double> notas = entry.getValue();
 
-        List<Double> notasAline = new ArrayList<>();
-        notasAline.add(7.0);
-        notasAline.add(7.0);
-        notasAline.add(7.0);
-        notasAline.add(7.0);
-        alunos.put("Aline",notasAline);
+            try {
 
+            }catch (){
 
+            }
+        }
     }
 }
